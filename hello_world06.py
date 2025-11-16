@@ -20,13 +20,14 @@ Odgs = string.octdigits
 PCtn = string.punctuation
 
 
-
+## "HELLO"
 StringRegAL = re.search("h", AL)
 StringRegAU = re.search("E", AU)
 StringRegPCtn0 = re.search("\|", PCtn)
 StringRegPCtn1 = re.search("\|", PCtn)
 StringRegDgs = re.search("0", Dgs)
 
+## "WORLD"
 StringRegAL_ = re.search("w", AL)
 StringRegAU_ = re.search("O", AU)
 StringRegPCtn_0 = re.search("\~", PCtn)
@@ -42,5 +43,6 @@ print(StringRegAL_.group(0) + StringRegAU_.group(0) + \
       StringRegPCtn_0.group(0) + StringRegPCtn_1.group(0) + \
       StringRegHDgs.group(0))
     
+
 
 print();print()
